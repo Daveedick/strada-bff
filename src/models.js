@@ -8,6 +8,10 @@ const MovieSchema = new mongoose.Schema({
 	duration: Number, // продолжительность в минутах
 	director: String, // режиссер
 	rating: Number, // рейтинг фильма
+	category: {
+		type: "ObjectId",
+		ref: "Category",
+	},
 });
 
 // Схема для категорий - определяет структуру документа категории
