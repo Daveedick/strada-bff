@@ -1,5 +1,5 @@
 import express from "express";
-import handleEndpoints from "./api/endpoints.js";
+import handleEndpoints from "./api/endpoints/index.js";
 import handleCors from "./api/cors.js";
 
 // Создаем экземпляр приложения и настраиваем порт
