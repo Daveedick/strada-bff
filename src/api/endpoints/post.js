@@ -8,7 +8,7 @@ const handleHTTPPostRequests = (app, config, models) => {
 		app.post(`/${route}`, async (req, res) => {
 			// Оборачиваем логику в обработчик ошибок
 			handleRequest(res, async () => {
-				// Специальная обработка для комментариев к фильмам
+				// Специальная обработка для комментариев к фильмам (забыл указать эту фичу в последнем коммите)
 				if (route.includes("comments")) {
 					await createEntity(models.comments, {
 						content: req.body.content,
